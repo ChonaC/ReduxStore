@@ -4,7 +4,7 @@
   "description": "Allows user to browse website and purchase items",
   "main": "Server/server.js",
   "scripts": {
-    "start": "cd Server && npm start",
+    "start": "node Server/server.js",
     "start:dev": "concurrently \"cd Server && npm run watch\" \"cd client && npm start\"",
     "install": "cd Server && npm i && cd ../client && npm i",
     "seed": "cd Server && npm run seed",
