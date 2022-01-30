@@ -1,0 +1,30 @@
+{
+  "name": "redux_store",
+  "version": "1.0.0",
+  "description": "Allows user to browse website and purchase items",
+  "main": "Server/server.js",
+  "scripts": {
+    "start": "cd Server && npm start",
+    "start:dev": "concurrently \"cd Server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd Server && npm i && cd ../client && npm i",
+    "seed": "cd Server && npm run seed",
+    "heroku-postbuild": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChonaC/Redux_Store.git"
+  },
+  "author": "Chona Castillo",
+  "license": "ISC",
+  "dependencies": {
+    "if-env": "^1.0.4",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/ChonaC/Redux_Store/issues"
+  },
+  "homepage": "https://github.com/ChonaC/Redux_Store#readme"
+}
